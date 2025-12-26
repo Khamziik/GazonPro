@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заказ подтвержден - ГазонПро</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <div class="logo">
+                    <span class="logo__icon">🌱</span>
+                    <span class="logo__text">ГазонПро</span>
+                </div>
+                
+                <nav class="nav">
+                    <a href="../index.html" class="nav__link">← Вернуться в магазин</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- CONFIRMATION SECTION -->
+    <section class="confirmation">
+        <div class="container">
+            <div class="confirmation__card">
+                <div class="confirmation__icon">✓</div>
+                <h1 class="confirmation__title">Спасибо за заказ!</h1>
+                <p class="confirmation__subtitle">Мы свяжемся с вами в ближайшее время</p>
+
+                <div class="confirmation__details">
+                    <div class="confirmation__row">
+                        <span class="confirmation__label">Номер заказа:</span>
+                        <span class="confirmation__value" id="orderNumber">ГП-082628</span>
+                    </div>
+
+                    <div class="confirmation__row">
+                        <span class="confirmation__label">Сумма:</span>
+                        <span class="confirmation__value" id="orderAmount">850 ₸</span>
+                    </div>
+
+                    <div class="confirmation__row">
+                        <span class="confirmation__label">Способ оплаты:</span>
+                        <span class="confirmation__value" id="paymentMethod">Онлайн-оплата</span>
+                    </div>
+
+                    <div class="confirmation__row">
+                        <span class="confirmation__label">Способ доставки:</span>
+                        <span class="confirmation__value" id="deliveryMethod">Доставка</span>
+                    </div>
+                </div>
+
+                <div class="confirmation__message">
+                    <p><strong>📧 На ваш email отправлено письмо с деталями заказа</strong></p>
+                    <p>Проверьте папку "Спам", если письмо не пришло в основной ящик</p>
+                </div>
+
+                <div class="confirmation__actions">
+                    <a href="../index.html" class="btn btn--primary">Вернуться в магазин</a>
+                    <a href="../index.html#catalog" class="btn btn--secondary">Продолжить покупки</a>
+                </div>
+
+                <div class="confirmation__info">
+                    <h3>Что дальше?</h3>
+                    <ol class="confirmation__steps">
+                        <li><strong>Подтверждение:</strong> Мы позвоним вам для подтверждения заказа</li>
+                        <li><strong>Подготовка:</strong> Ваш газон будет подготовлен к отправке (1-2 дня)</li>
+                        <li><strong>Доставка:</strong> Товар доставляется в течение 3-5 рабочих дней</li>
+                        <li><strong>Установка:</strong> По желанию можем помочь с профессиональной установкой</li>
+                    </ol>
+                </div>
+
+                <div class="confirmation__support">
+                    <p><strong>Вопросы?</strong> Свяжитесь с нами:</p>
+                    <p>📞 <a href="tel:+77123456789">+7 (712) 345-67-89</a></p>
+                    <p>📧 <a href="mailto:info@gazonpro.kz">info@gazonpro.kz</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__column">
+                    <h4 class="footer__title">ГазонПро</h4>
+                    <p class="footer__text">Премиум искусственный газон для вашего дома и бизнеса.</p>
+                </div>
+
+                <div class="footer__column">
+                    <h4 class="footer__title">Информация</h4>
+                    <ul class="footer__list">
+                        <li><a href="../index.html#catalog" class="footer__link">Каталог</a></li>
+                        <li><a href="../index.html#benefits" class="footer__link">Преимущества</a></li>
+                        <li><a href="../index.html#reviews" class="footer__link">Отзывы</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__column">
+                    <h4 class="footer__title">Документы</h4>
+                    <ul class="footer__list">
+                        <li><a href="#" class="footer__link">Публичная оферта</a></li>
+                        <li><a href="#" class="footer__link">Условия оплаты</a></li>
+                        <li><a href="#" class="footer__link">Условия доставки</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__column">
+                    <h4 class="footer__title">Контакты</h4>
+                    <ul class="footer__list">
+                        <li><a href="tel:+77123456789" class="footer__link">+7 (712) 345-67-89</a></li>
+                        <li><a href="mailto:info@gazonpro.kz" class="footer__link">info@gazonpro.kz</a></li>
+                        <li><p class="footer__text">Алматы, ул. Достык, 123</p></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p>&copy; 2024 ГазонПро. Все права защищены.</p>
+                <ul class="footer__bottom-links">
+                    <li><a href="#" class="footer__link">Политика конфиденциальности</a></li>
+                    <li><a href="#" class="footer__link">Условия использования</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/confirmation.js"></script>
+</body>
+</html>

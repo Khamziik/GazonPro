@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ГазонПро - Магазин Искусственного Газона</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <div class="logo">
+                    <span class="logo__icon">🌱</span>
+                    <span class="logo__text">ГазонПро</span>
+                </div>
+                
+                <nav class="nav">
+                    <a href="#catalog" class="nav__link">Каталог</a>
+                    <a href="#benefits" class="nav__link">Преимущества</a>
+                    <a href="#reviews" class="nav__link">Отзывы</a>
+                </nav>
+
+                <button class="cart-btn" id="cartBtn">
+                    <span class="cart-icon">🛒</span>
+                    <span class="cart-count" id="cartCount">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero__content">
+            <h1 class="hero__title">Идеальный газон<br><span class="hero__accent">без забот</span></h1>
+            <p class="hero__subtitle">Премиум искусственный газон для вашего дома. Красивый, прочный и не требует ухода.</p>
+            
+            <div class="hero__buttons">
+                <button class="btn btn--primary" onclick="document.getElementById('catalog').scrollIntoView({behavior: 'smooth'})">Купить онлайн</button>
+                <button class="btn btn--secondary">Добавить в корзину</button>
+            </div>
+        </div>
+        <div class="hero__image">
+            <img src="images/hero-banner.jpg" alt="Искусственный газон">
+        </div>
+    </section>
+
+    <!-- BENEFITS SECTION -->
+    <section class="benefits" id="benefits">
+        <div class="container">
+            <h2 class="section-title">Почему выбирают нас</h2>
+            <p class="section-subtitle">Премиум качество, надёжность и удобство в каждом заказе</p>
+            
+            <div class="benefits__grid">
+                <div class="benefit-card">
+                    <div class="benefit-card__icon">🌿</div>
+                    <h3 class="benefit-card__title">Экологичный материал</h3>
+                    <p class="benefit-card__text">Изготовлен из переработанных полимеров, безопасен для детей и животных.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-card__icon">💧</div>
+                    <h3 class="benefit-card__title">Не требует полива</h3>
+                    <p class="benefit-card__text">Экономьте воду и время. Газон остаётся зелёным круглый год.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-card__icon">⚡</div>
+                    <h3 class="benefit-card__title">Быстрое оформление</h3>
+                    <p class="benefit-card__text">Онлайн-оплата, быстрая доставка, профессиональная установка.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-card__icon">✅</div>
+                    <h3 class="benefit-card__title">Гарантия качества</h3>
+                    <p class="benefit-card__text">Возврат в течение 7 дней, гарантия 10 лет на материал.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CATALOG SECTION -->
+    <section class="catalog" id="catalog">
+        <div class="container">
+            <h2 class="section-title">Каталог газонов</h2>
+            <p class="section-subtitle">Выберите идеальный газон для вашего проекта</p>
+            
+            <div class="products-grid" id="productsGrid">
+                <!-- Товары будут загружены через JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- REVIEWS SECTION -->
+    <section class="reviews" id="reviews">
+        <div class="container">
+            <h2 class="section-title">Отзывы клиентов</h2>
+            <p class="section-subtitle">Более 500 довольных покупателей</p>
+            
+            <div class="reviews__grid">
+                <div class="review-card">
+                    <div class="review-card__rating">★★★★★</div>
+                    <p class="review-card__text">"Отличный газон! Выглядит как настоящий, но без забот. Уже год не требует никакого ухода."</p>
+                    <p class="review-card__author">Александр К.</p>
+                    <p class="review-card__badge">✓ Проверенный покупатель</p>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-card__rating">★★★★★</div>
+                    <p class="review-card__text">"Быстрая доставка, профессиональная установка. Очень доволен результатом!"</p>
+                    <p class="review-card__author">Мария П.</p>
+                    <p class="review-card__badge">✓ Проверенный покупатель</p>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-card__rating">★★★★</div>
+                    <p class="review-card__text">"Хороший материал, но цена немного выше, чем ожидал. Всё равно рекомендую."</p>
+                    <p class="review-card__author">Иван Т.</p>
+                    <p class="review-card__badge">✓ Проверенный покупатель</p>
+                </div>
+            </div>
+
+            <div class="trust-badges">
+                <div class="trust-badge">
+                    <span class="trust-badge__icon">🔒</span>
+                    <div>
+                        <p class="trust-badge__title">Безопасная оплата</p>
+                        <p class="trust-badge__text">Защита данных и платежей на уровне банков</p>
+                    </div>
+                </div>
+
+                <div class="trust-badge">
+                    <span class="trust-badge__icon">↩️</span>
+                    <div>
+                        <p class="trust-badge__title">Возврат в течение 7 дней</p>
+                        <p class="trust-badge__text">Если что-то не понравилось, вернём деньги</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__column">
+                    <h4 class="footer__title">ГазонПро</h4>
+                    <p class="footer__text">Премиум искусственный газон для вашего дома и бизнеса.</p>
+                </div>
+
+                <div class="footer__column">
+                    <h4 class="footer__title">Информация</h4>
+                    <ul class="footer__list">
+                        <li><a href="#" class="footer__link">Каталог</a></li>
+                        <li><a href="#" class="footer__link">Преимущества</a></li>
+                        <li><a href="#" class="footer__link">Отзывы</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__column">
+                    <h4 class="footer__title">Документы</h4>
+                    <ul class="footer__list">
+                        <li><a href="#" class="footer__link">Публичная оферта</a></li>
+                        <li><a href="#" class="footer__link">Условия оплаты</a></li>
+                        <li><a href="#" class="footer__link">Условия доставки</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__column">
+                    <h4 class="footer__title">Контакты</h4>
+                    <ul class="footer__list">
+                        <li><a href="tel:+77123456789" class="footer__link">+7 (712) 345-67-89</a></li>
+                        <li><a href="mailto:info@gazonpro.kz" class="footer__link">info@gazonpro.kz</a></li>
+                        <li><p class="footer__text">Алматы, ул. Достык, 123</p></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p>&copy; 2024 ГазонПро. Все права защищены.</p>
+                <ul class="footer__bottom-links">
+                    <li><a href="#" class="footer__link">Политика конфиденциальности</a></li>
+                    <li><a href="#" class="footer__link">Условия использования</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- CART MODAL -->
+    <div class="modal" id="cartModal">
+        <div class="modal__content">
+            <div class="modal__header">
+                <h2>Корзина</h2>
+                <button class="modal__close" id="closeCartBtn">&times;</button>
+            </div>
+            
+            <div class="modal__body">
+                <div id="cartItems" class="cart-items">
+                    <!-- Товары в корзине будут загружены через JavaScript -->
+                </div>
+                <div id="emptyCart" class="empty-cart">
+                    <p>Ваша корзина пуста</p>
+                </div>
+            </div>
+
+            <div class="modal__footer">
+                <div class="cart-total">
+                    <span>Итого:</span>
+                    <span id="cartTotal">0 ₸</span>
+                </div>
+                <button class="btn btn--primary btn--full" id="checkoutBtn">Оформить заказ</button>
+                <button class="btn btn--secondary btn--full" id="continueShopping">Продолжить покупки</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/products.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
